@@ -1,5 +1,5 @@
 module.exports = {
-  assetsPrefix: '/saitonakamura.ru',
+  assetPrefix: '/saitonakamura.ru',
   exportPathMap: function() {
     return {
       '/': { page: '/' },
