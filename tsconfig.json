@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "preserve",
+    "pretty": true,
+    "alwaysStrict": true,
+    "strict": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
