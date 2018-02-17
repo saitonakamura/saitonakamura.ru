@@ -1,9 +1,5 @@
 import * as React from 'react'
+import Main from '../components/Main'
+import { withRoot } from '../components/Root'
 
-const Root: React.SFC<{}> = () => (
-  <div>
-    <p>Hello world</p>
-  </div>
-)
-
-export default Root
+export default withRoot(Main)
