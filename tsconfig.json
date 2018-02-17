@@ -1,16 +1,21 @@
 {
   "compilerOptions": {
+    "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
-    "strictNullChecks": true,
-    "noUnusedLocals": true,
-    "noImplicitReturns": true,
-    "forceConsistentCasingInFileNames": true,
     "jsx": "preserve",
+    "strictNullChecks": true,
+    "noUnusedLocals": false,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "noUnusedParameters": false,
+    "forceConsistentCasingInFileNames": true,
     "pretty": true,
     "alwaysStrict": true,
-    "strict": true
+    "strict": true,
+    "sourceMap": true
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules"]
+  "include": ["components/**/*", "pages/**/*"],
+  "exclude": ["node_modules"],
+  "compileOnSave": false
 }
