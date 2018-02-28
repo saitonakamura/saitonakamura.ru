@@ -1,0 +1,20 @@
+.main {
+  margin-top: 50px;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.introduction {
+  font-size: 36px;
+  display: block;
+}
+
+.name {
+  font-size: 42px;
+}
