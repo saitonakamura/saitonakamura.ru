@@ -1,0 +1,28 @@
+.header {
+  background-color: #2f80ed;
+  justify-content: center;
+  align-items: center;
+  height: 57px;
+  font-size: 24px;
+}
+
+.nav {
+  min-width: 70%;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  margin-bottom: 3px;
+}
+
+.nav > a {
+  margin-right: 10px;
+}
+
+.icon {
+  fill: transparent;
+  transform: scale(1.2);
+}
+
+.link {
+  color: #f2f2f2;
+}
