@@ -43,9 +43,12 @@
     "typescript": "^2.7.1"
   },
   "lint-staged": {
-    "*.css": ["prettier-stylelint --write", "git add", "lint:styles"],
-    "*.{ts,tsx}": ["prettier --write", "git add", "lint:code"],
-    "*.{json,md}": ["prettier --write", "git add"]
+    "ignore": ["docs/**/*"],
+    "linters": {
+      "*.css": ["prettier-stylelint --write", "git add", "lint:styles"],
+      "*.{ts,tsx}": ["prettier --write", "git add", "lint:code"],
+      "*.{json,md}": ["prettier --write", "git add"]
+    }
   },
   "repository": {
     "type": "git",
