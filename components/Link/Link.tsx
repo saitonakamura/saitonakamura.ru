@@ -1,9 +1,9 @@
 import NextJsLink, { LinkState } from 'next/link'
 import * as React from 'react'
 
-const assetPrefix = process.env.ASSET_PREFIX
+export const assetPrefix = process.env.ASSET_PREFIX
 
-const urlToCurrentSite = (url: string) =>
+export const urlToCurrentSite = (url: string) =>
   url.startsWith('/') ||
   !(url.startsWith('http') || url.startsWith('mailto') || url.startsWith('tel'))
 
