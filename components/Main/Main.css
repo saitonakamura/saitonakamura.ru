@@ -1,20 +1,35 @@
 .main {
   margin-top: 50px;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.header {
+  flex-wrap: wrap;
 }
 
 .avatar {
   border-radius: 50%;
   width: 200px;
   height: 200px;
-  margin-left: 25px;
   margin-right: 25px;
 }
 
 .introduction {
+  flex-basis: 600px;
   font-size: 36px;
   display: block;
 }
 
 .name {
   font-size: 42px;
+}
+
+.events {
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.event {
+  /* margin-left: 250px; */
 }

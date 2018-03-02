@@ -8,7 +8,15 @@ body {
 div,
 header,
 nav,
-main {
+main,
+article,
+aside,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   display: flex;
 }
 
@@ -20,5 +28,15 @@ a {
 }
 
 a {
+  color: #2f80ed;
   text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
 }

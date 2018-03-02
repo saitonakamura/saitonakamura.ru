@@ -1,0 +1,23 @@
+.card {
+  margin-bottom: 20px;
+
+  /* flex-wrap: wrap; */
+
+  /* flex-basis: 600px; */
+}
+
+.content {
+  flex-direction: column;
+}
+
+.header {
+  font-size: 24px;
+}
+
+.description {
+  font-size: 16px;
+}
+
+.aside {
+  /* min-width: 225px; */
+}
