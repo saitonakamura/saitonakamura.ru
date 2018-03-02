@@ -20,21 +20,37 @@ const webpackEnrich = (config, options) => {
     },
     {
       test: /\.(png|jpe?g)$/,
-      use: [
-        {
-          loader: 'file-loader',
-          options: {
-            publicPath: dev ? '/_next/webpack' : '/_next/static',
-            outputPath: dev ? undefined : '/static',
+      use: {
+        loader: 'file-loader',
+        options: {
+          name: '[name]__[hash].[ext]',
+          publicPath: dev ? '/_next/webpack' : '/_next/static',
+          outputPath: dev ? undefined : '/static',
+        },
+      },
+    },
+    // {
+    //   test: /\.(png|jpe?g)$/,
+    //   use: {
+    //     loader: 'url-loader',
+    //     options: {
+    //       limit: 10 * 1024,
+    //     },
+    //   },
+    // },
+    {
+      test: /\.(png|jpe?g)$/,
+      use: {
+        loader: 'image-webpack-loader',
+        options: {
+          bypassOnDebug: false,
+          mozjpeg: {
+            progressive: true,
+            quality: 65,
           },
         },
-        {
-          loader: 'image-webpack-loader',
-          options: {
-            bypassOnDebug: dev,
-          },
-        },
-      ],
+      },
+      enforce: 'pre',
     },
   )
 
